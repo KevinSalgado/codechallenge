@@ -1,5 +1,9 @@
 const Reader = require("./lib/utils/reader");
+const ExplorerController = require("./lib/controllers/ExplorerController");
 
-const visualpartners = Reader.readJsonFile("visualpartners.json");
+//const visualpartners = Reader.readJsonFile("visualpartners.json");
 
-console.log(visualpartners);
+const get = ExplorerController.getPartners();
+console.log(get);
+
+//console.log(visualpartners);
