@@ -6,4 +6,14 @@ describe("Tests for ExplorerController", () => {
     const Partners = ExplorerController.getPartners();
     expect(Partners).not.toBeUndefined();
   });
+
+  test("2. Regresar los partners con certification", () => {
+    const Partners = ExplorerController.ConCertification();
+    expect(Partners).not.toBeUndefined();
+  });
+
+  test("3. Regresar los partners con mas de 500 creditos", () => {
+    const Partners = ExplorerController.mayor();
+    expect(Partners).not.toBeUndefined();
+  });
 });
